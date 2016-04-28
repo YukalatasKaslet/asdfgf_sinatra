@@ -1,0 +1,90 @@
+<h1>GET  get_cool_url vista </h1>
+
+<h2><%= @user_input %></h2>
+
+<form action="/prueba_1" method="post">
+  <div align="left"><br>
+    <p>Ejemplo radio buttom</p>
+    <input type="radio" name="group1" value="Lechuga"> Lechuga<br>
+    <input type="radio" name="group1" value="Zanahoria"> Zanahoria<br>
+    <input type="radio" name="group1" value="Pepino"> Pepino
+    <hr>
+    <input type="radio" name="group2" value="Pan"> Pan<br>
+    <input type="radio" name="group2" value="Chilaquiles"> Chilaquiles<br>
+    <input type="radio" name="group2" value="Atole" checked> Atole<br>
+  </div>
+
+<!-- 
+
+  Código original
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="center"><br>
+<input type="radio" name="group1" value="Milk"> Milk<br>
+<input type="radio" name="group1" value="Butter" checked> Butter<br>
+<input type="radio" name="group1" value="Cheese"> Cheese
+<hr>
+<input type="radio" name="group2" value="Water"> Water<br>
+<input type="radio" name="group2" value="Beer"> Beer<br>
+<input type="radio" name="group2" value="Wine" checked> Wine<br>
+</div>
+</form>
+
+
+-->
+<!--
+explicación
+  radio        Choose one - and only one - option
+    name=         Name of the group.
+    value=         Value that is submitted if checked.
+    align=        Alignment of the field.Valid entries are:
+                  TOP, MIDDLE, BOTTOM, RIGHT, LEFT, TEXTTOP,   BASELINE, ABSMIDDLE, ABSBOTTOM. 
+    tabindex=     Tab order of the field.
+  checked         Default check this field.
+
+http://www.echoecho.com/htmlforms10.htm
+-->
+
+
+<div align="center">
+  <p>Ejemplo text area</p>
+  This is outside the area
+  <br><br>
+    <textarea cols="40" rows="5" name="myname" wrap="physical">
+    Now we are inside the area - which is nice.
+    </textarea>
+  <br><br>
+  And now we are outside the area again.
+</div>
+<input type="submit" value="subimit!">
+</form>
+<!-- 
+
+  Código original
+
+
+
+-->
+<!--
+explicación
+  textarea            Text area - several lines
+    rows=             Rows in the field.
+    cols=             Columns in the field.
+    name=             Name of the field.
+    tabindex=         Tab order of the field.
+
+    wrap=             Turns off linebreaking.
+                      Shows linebreaking, but sends text as entered.
+                      Inserts linebreaks when needed and even sends it.
+      off             The text is handled as one long sequence
+                      of text without linebreaks.
+      virtual         The text appears on your page as if it recognized linebreaks
+                      but when the form is submitted the linebreaks are turned off.
+      physical        The text is submitted exactly as it appears on
+                      the screen - linebreaks included.
+  
+  The cols and rows settings are straightforward and simple. They specify how many columns and rows you want in your text area.
+  The wrap options are the most tricky part of text areas.
+
+
+http://www.echoecho.com/htmlforms08.htm
+-->

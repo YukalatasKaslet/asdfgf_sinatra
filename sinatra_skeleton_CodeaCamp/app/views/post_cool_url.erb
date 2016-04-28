@@ -1,0 +1,76 @@
+<h1>POST post_cool_url vista</h1>
+<div align="center">
+  <p>Ejemplo select</p>
+  <select name="user_choice">
+    <option value="gorda1">Pan</option>
+    <option value="gorda2">Chilaquiles</option>
+    <option value="gorda3">Atole</option>
+    <option value="gorda4">Todas XD</option>
+  </select>
+</div>
+
+
+<!-- 
+
+  Código original
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="center">
+<select name="mydropdown">
+<option value="Milk">Fresh Milk</option>
+<option value="Cheese">Old Cheese</option>
+<option value="Bread">Hot Bread</option>
+</select>
+</div>
+</form> 
+
+-->
+<!--
+explicación
+  select        Drop-down menu
+    name=       Name of the field.
+    size=       Visible items in list.
+    multiple=   Allows multiple choices if yes.
+
+  option        Individual items in the menu.
+    selected    Default select the item.
+    value=      Value to send if selected.
+http://www.echoecho.com/htmlforms11.htm
+-->
+
+
+
+
+
+<div align="left"><br>
+  <p>Ejemplo checkbox</p>
+  <input type="checkbox" name="option1" value="op1"> pan<br>
+  <input type="checkbox" name="option2" value="op2" checked> chilaquiles<br> <!-- checked opción activa por default al ponerlo-->
+  <input type="checkbox" name="option3" value="op3"> atole<br>
+  <br>
+</div>
+
+<!-- 
+
+  Código original
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="center"><br>
+<input type="checkbox" name="option1" value="Milk"> Milk<br>
+<input type="checkbox" name="option2" value="Butter" checked> Butter<br>
+<input type="checkbox" name="option3" value="Cheese"> Cheese<br>
+<br>
+</div>
+</form>
+
+-->
+<!--
+explicación
+  checkbox        Choose one or more options
+    name=         Name of the field.
+    size=         Value that is submitted if checked.
+    align=        Alignment of the field.Valid entries are:
+                  TOP, MIDDLE, BOTTOM, RIGHT, LEFT, TEXTTOP,   BASELINE, ABSMIDDLE, ABSBOTTOM. 
+    tabindex=     Tab order of the field.
+  checked         Default check this field.
+
+http://www.echoecho.com/htmlforms09.htm
+-->

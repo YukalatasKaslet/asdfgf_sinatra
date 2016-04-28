@@ -1,0 +1,21 @@
+<h1> Prueba de recibir parametros </h1>
+
+<% @op1.each do |array| %>
+  <%= array %>
+  <br>
+  <% end %>
+<br>
+<br>
+
+<% @op2.each do |hash| %>
+  <%= hash %>
+  <br>
+<% end %>
+<br>
+
+<% @op2.each do |h| %>
+  <% h.each do |hash| %>
+    <%= hash %>
+    <br>
+  <% end %>
+<% end %>
